@@ -8,4 +8,5 @@ strat = Guitar("Fender Stratocaster", 2003, 1445.00)
 print(gibson)
 print(strat)
 
-print(gibson.get_age())
+print("Gibson L-5 CES get_age() - Expected 96. Got {}".format(gibson.get_age()))
+print("Gibson L-5 CES is_vintage() - Expected True. Got {}".format(gibson.is_vintage()))

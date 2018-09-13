@@ -8,11 +8,13 @@ class ProgrammingLanguage:
         self.reflection = reflection
         self.year = year
 
+
     def __str__(self):
         return "{self.name}, {self.typing} typing, Reflection={self.reflection}, First appeared in {self.year}".format(self=self)
 
     def is_dynamic(self):
-        if self.typing == "Static":
-            return False
-        elif self.typing == "Dynamic":
-            return True
+        # if self.typing == "Static":
+        #     return False
+        # elif self.typing == "Dynamic":
+        #     return True
+        return self.typing == "Dynamic"
